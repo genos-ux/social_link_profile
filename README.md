@@ -1,2 +1,3 @@
 # social_link_profile
-Building a social link profile using HTML and CSS from Frontend Mentor
+Building a social link profile with all my profiles.
+Built with HTML and CSS.
