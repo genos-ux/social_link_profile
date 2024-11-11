@@ -7,11 +7,10 @@ $grey-900: hsl(0, 0%, 8%);
 $border: 1px solid white;
 $border-radius: 5px;
 
+
 @mixin flex {
     display: flex;
     align-items: center;
     justify-content: center;
     // flex: 1 1 0;
 }
-
-
