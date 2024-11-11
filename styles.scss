@@ -1,9 +1,39 @@
 @import "variables";
 
-h2{
-    border: 1px solid $green;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background-color: aqua;
+body
+{
+    background: $grey-800;
+    @include flex;
+    border: $border;
+    height: 100vh;
+
+    #content
+    {
+        
+        width: 25%;
+        height: 80%;
+        padding: 10px;
+        border: $border-radius;
+        border: $border;
+
+        .main-content
+        {
+
+            border: $border;
+
+            img{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+
+        }
+
+    }
 }

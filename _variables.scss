@@ -1,9 +1,15 @@
 $green: hsl(75, 94%, 57%);
 $white: hsl(0, 0%, 100%);
 $ft-size: 14px;
+$grey-700: hsl(0, 0%, 20%);
+$grey-800: hsl(0, 0%, 12%);
+$grey-900: hsl(0, 0%, 8%);
+$border: 1px solid white;
+$border-radius: 5px;
 
 @mixin flex {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    // flex: 1 1 0;
 }
