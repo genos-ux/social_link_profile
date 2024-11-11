@@ -1,84 +1,131 @@
 @import "variables";
+@import url('https://fonts.google.com/specimen/Inter)');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-a
-{
-    @include links;
+    font-family: 'Inter',sans-serif;
+    font-size: 14px;
 }
 
 body
 {
-    background: $grey-800;
     @include flex;
     border: $border;
     height: 100vh;
+    background: $grey-900;
 
     #content
     {
-
-        width: 28%;
-        height: 80vh;
-        padding: 10px;
-        border: $border-radius;
+        width: 22%;
+        height: 70%;
         border: $border;
-        @include flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+        background: $grey-800;
+        border-radius: $border-radius;
 
-        .main-content
+
+        img
         {
-            height: 80%;
-            width: 84%;
-            border: $border;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+        }
 
+        .headers
+        {
+            p.name{
+                color: $white;
+                font-weight: 700;
+
+            }
+
+            p.location{
+                font-weight: 600;
+                color: $green;
+            }
+        }
+
+        #social-media-links{
             display: flex;
             flex-direction: column;
-            align-items: center;
-            padding: 10px 0;
+            width: 90%;
+            margin-top: 20px;
 
-
-
-
-            #img-container
+            a
             {
-                @include flex;
-
-                img
-                {
-                    width: 80px;
-                    height: 80px;
-                    border-radius: 50%;
-                }
+                @include link;
             }
-
-
-
-
-
-            p
-            {
-                text-align: center;
-            }
-
-            .buttons{
-                display: flex;
-                flex-direction: column;
-
-                width: 90%;
-                margin-top: 20px;
-
-                button
-                {
-                    @include button;
-                }
-            }
-
-
-
         }
+
+        // padding: 10px 0;
+
+
+
+
+        // width: 28%;
+        // height: 80vh;
+        // padding: 10px;
+        // border: $border-radius;
+        // border: $border;
+        // @include flex;
+
+        // .main-content
+        // {
+
+        //     width: 84%;
+        //     border: $border;
+
+        //     display: flex;
+        //     flex-direction: column;
+        //     align-items: center;
+        //     padding: 10px 0;
+
+
+
+
+        //     #img-container
+        //     {
+        //         @include flex;
+
+        //         img
+        //         {
+        //             width: 80px;
+        //             height: 80px;
+        //             border-radius: 50%;
+        //         }
+        //     }
+
+
+
+
+
+        //     p
+        //     {
+        //         text-align: center;
+        //     }
+
+        //     .buttons{
+        //         display: flex;
+        //         flex-direction: column;
+
+        //         width: 90%;
+        //         margin-top: 20px;
+
+        //         button
+        //         {
+        //             @include button;
+        //         }
+        //     }
+
+
+
+        // }
 
     }
 }

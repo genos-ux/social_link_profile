@@ -4,8 +4,8 @@ $ft-size: 14px;
 $grey-700: hsl(0, 0%, 20%);
 $grey-800: hsl(0, 0%, 12%);
 $grey-900: hsl(0, 0%, 8%);
-$border: 1px solid white;
-$border-radius: 5px;
+$border: 1px solid $grey-800;
+$border-radius: 6px;
 
 
 @mixin flex
@@ -16,15 +16,30 @@ $border-radius: 5px;
     // flex: 1 1 0;
 }
 
-@mixin links
+@mixin flex-column
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin link
 {
     text-decoration: none;
+    text-align: center;
+    padding: 9px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    background: $grey-700;
+    border: none;
     color: $white;
 }
 
 @mixin button
 {
-    padding: 8px;
+    padding: 10px;
     text-align: center;
     margin-bottom: 10px;
     background: $grey-700;
