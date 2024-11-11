@@ -15,8 +15,8 @@ body
 
     #content
     {
-        
-        width: 25%;
+        @include flex;
+        width: 20%;
         height: 80%;
         padding: 10px;
         border: $border-radius;
