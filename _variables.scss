@@ -7,6 +7,11 @@ $grey-900: hsl(0, 0%, 8%);
 $border: 1px solid $grey-800;
 $border-radius: 6px;
 
+// Define breakpoint variables
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+
 
 @mixin flex
 {
@@ -35,6 +40,7 @@ $border-radius: 6px;
     background: $grey-700;
     border: none;
     color: $white;
+    font-weight: 600;
 }
 
 @mixin button

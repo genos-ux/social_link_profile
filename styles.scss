@@ -32,8 +32,8 @@ body
 
         img
         {
-            width: 65px;
-            height: 65px;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
         }
 
@@ -41,7 +41,8 @@ body
         {
             p.name{
                 color: $white;
-                font-weight: 700;
+                font-weight: 900;
+                margin-bottom: 4px;
 
             }
 
@@ -51,16 +52,32 @@ body
             }
         }
 
+        p{
+            font-size: 12px;
+            color: $white;
+        }
+
+
+
         #social-media-links{
             display: flex;
             flex-direction: column;
-            width: 90%;
-            margin-top: 20px;
+            width: 86%;
+            margin-top: 15px;
 
             a
             {
                 @include link;
+
+                &:hover
+                {
+                    background: $green;
+                    color: $grey-900;
+
+                }
             }
+
+
         }
 
         // padding: 10px 0;
