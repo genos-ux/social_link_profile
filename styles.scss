@@ -16,10 +16,21 @@ body
     height: 100vh;
     background: $grey-900;
 
+    #content > *
+    {
+        flex-shrink: 0;
+    }
+
     #content
     {
+        @media (max-width: $mobile) {
+            flex: 0 0 64%;
+            height: 57%;
+
+
+        }
+
         width: 22%;
-        height: 70%;
         border: $border;
         display: flex;
         flex-direction: column;
@@ -28,7 +39,6 @@ body
         padding: 10px;
         background: $grey-800;
         border-radius: $border-radius;
-
 
         img
         {
@@ -42,8 +52,7 @@ body
             p.name{
                 color: $white;
                 font-weight: 900;
-                margin-bottom: 4px;
-
+                margin-bottom: 5px;
             }
 
             p.location{
@@ -55,14 +64,13 @@ body
         p{
             font-size: 12px;
             color: $white;
+            text-align: center;
         }
-
-
 
         #social-media-links{
             display: flex;
             flex-direction: column;
-            width: 86%;
+            width: 89%;
             margin-top: 15px;
 
             a
@@ -73,76 +81,19 @@ body
                 {
                     background: $green;
                     color: $grey-900;
-
                 }
             }
-
-
         }
 
-        // padding: 10px 0;
+        @media(min-width: $tablet)
+        {
+            
+        }
 
 
 
-
-        // width: 28%;
-        // height: 80vh;
-        // padding: 10px;
-        // border: $border-radius;
-        // border: $border;
-        // @include flex;
-
-        // .main-content
-        // {
-
-        //     width: 84%;
-        //     border: $border;
-
-        //     display: flex;
-        //     flex-direction: column;
-        //     align-items: center;
-        //     padding: 10px 0;
-
-
-
-
-        //     #img-container
-        //     {
-        //         @include flex;
-
-        //         img
-        //         {
-        //             width: 80px;
-        //             height: 80px;
-        //             border-radius: 50%;
-        //         }
-        //     }
-
-
-
-
-
-        //     p
-        //     {
-        //         text-align: center;
-        //     }
-
-        //     .buttons{
-        //         display: flex;
-        //         flex-direction: column;
-
-        //         width: 90%;
-        //         margin-top: 20px;
-
-        //         button
-        //         {
-        //             @include button;
-        //         }
-        //     }
-
-
-
-        // }
-
+        @media (min-width: $desktop) {
+            flex:none;
+        }
     }
 }

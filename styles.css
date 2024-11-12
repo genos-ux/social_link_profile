@@ -15,9 +15,11 @@ body {
   height: 100vh;
   background: hsl(0, 0%, 8%);
 }
+body #content > * {
+  flex-shrink: 0;
+}
 body #content {
   width: 22%;
-  height: 70%;
   border: 1px solid hsl(0, 0%, 12%);
   display: flex;
   flex-direction: column;
@@ -27,6 +29,12 @@ body #content {
   background: hsl(0, 0%, 12%);
   border-radius: 6px;
 }
+@media (max-width: 480px) {
+  body #content {
+    flex: 0 0 64%;
+    height: 57%;
+  }
+}
 body #content img {
   width: 70px;
   height: 70px;
@@ -35,7 +43,7 @@ body #content img {
 body #content .headers p.name {
   color: hsl(0, 0%, 100%);
   font-weight: 900;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 body #content .headers p.location {
   font-weight: 600;
@@ -44,11 +52,12 @@ body #content .headers p.location {
 body #content p {
   font-size: 12px;
   color: hsl(0, 0%, 100%);
+  text-align: center;
 }
 body #content #social-media-links {
   display: flex;
   flex-direction: column;
-  width: 86%;
+  width: 89%;
   margin-top: 15px;
 }
 body #content #social-media-links a {
@@ -66,6 +75,11 @@ body #content #social-media-links a {
 body #content #social-media-links a:hover {
   background: hsl(75, 94%, 57%);
   color: hsl(0, 0%, 8%);
+}
+@media (min-width: 1024px) {
+  body #content {
+    flex: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
