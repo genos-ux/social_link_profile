@@ -3,9 +3,6 @@ A simple, social link profile responsive website built using SASS for styling. T
 
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Folder Structure](#folder-structure)
-- [Available Scripts](#available-scripts)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -15,3 +12,22 @@ A simple, social link profile responsive website built using SASS for styling. T
 - SASS variables for color and font management
 - Mixins for code reuse and easier media queries
 - CSS compiled from SASS for optimized styling
+
+## Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+
+## Contributing
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-name`).
+3. Make your changes and commit them (`git commit -m 'Add feature'`).
+4. Push to the branch (`git push origin feature-name`).
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
