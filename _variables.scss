@@ -9,17 +9,15 @@ $border-radius: 6px;
 
 
 // Define breakpoint variables
-$mobile: 480px;
+$mobile: 350px;
 $tablet: 540px;
-$desktop: 1024px;
-
+$desktop: 1000px;
 
 @mixin flex
 {
     display: flex;
     align-items: center;
     justify-content: center;
-    // flex: 1 1 0;
 }
 
 @mixin flex-column
@@ -28,7 +26,6 @@ $desktop: 1024px;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
 }
 
 @mixin link
@@ -55,8 +52,16 @@ $desktop: 1024px;
     border-radius: 4px;
 }
 
-@mixin query($width,$height)
+@mixin query($width)
 {
     flex: 0 0 $width;
-    height: $height;
+}
+
+@mixin all_elements
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+    font-size: 14px;
 }
