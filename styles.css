@@ -28,22 +28,6 @@ body #content {
   background: hsl(0, 0%, 12%);
   border-radius: 6px;
 }
-@media (min-width: 350px) {
-  body #content {
-    flex: 0 0 74%;
-    padding: 20px 0;
-  }
-}
-@media (min-width: 540px) {
-  body #content {
-    flex: 0 0 43%;
-  }
-}
-@media (min-width: 1000px) {
-  body #content {
-    flex: 0 0 27%;
-  }
-}
 body #content img {
   width: 70px;
   height: 70px;
@@ -91,6 +75,22 @@ body #content #social-media-links a {
 body #content #social-media-links a:hover {
   background: hsl(75, 94%, 57%);
   color: hsl(0, 0%, 8%);
+}
+@media (min-width: 350px) {
+  body #content {
+    flex: 0 0 74%;
+    padding: 20px 0;
+  }
+}
+@media (min-width: 540px) {
+  body #content {
+    flex: 0 0 43%;
+  }
+}
+@media (min-width: 1000px) {
+  body #content {
+    flex: 0 0 27%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

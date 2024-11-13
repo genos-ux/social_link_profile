@@ -19,21 +19,6 @@ body
 
     #content
     {
-        @media (min-width: $mobile) {
-            @include query(74%);
-            padding: 20px 0;
-        }
-
-        @media(min-width: $tablet)
-        {
-            @include query(43%);
-        }
-
-        @media(min-width: $desktop)
-        {
-            @include query(27%);
-        }
-
         border: $border;
         @include flex-column;
         padding: 10px;
@@ -90,6 +75,21 @@ body
                     color: $grey-900;
                 }
             }
+        }
+
+        @media (min-width: $mobile) {
+            @include query(74%);
+            padding: 20px 0;
+        }
+
+        @media(min-width: $tablet)
+        {
+            @include query(43%);
+        }
+
+        @media(min-width: $desktop)
+        {
+            @include query(27%);
         }
     }
 }
