@@ -1,3 +1,2 @@
 # social_link_profile
-Building a social link profile with all my profiles.
-Built with HTML and CSS.
+A simple, social link profile responsive website built using SASS for styling. This project demonstrates the use of SASS features like variables, mixins, nesting, and more for efficient and scalable CSS.
